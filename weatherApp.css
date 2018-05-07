@@ -45,3 +45,7 @@ body {
 #temp {
     font-size: 64px;
 }
+
+#ambientWeather {
+    margin-bottom: 25px;
+}
