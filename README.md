@@ -1,3 +1,3 @@
 # Weather-App
 
-![screenshot](/relative/path/to/weather_app?raw=true)
+![screenshot](https://github.com/obipez/Weather-App/blob/master/Weather%20App.png)
