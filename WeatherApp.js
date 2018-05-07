@@ -69,19 +69,19 @@ function setBackgroundColor(condition) {
             color = "#807d57";
             break;
         case (condition >= 500 && condition <= 599): // Group 5xx: Rain
-            color = "#746d82";
+            color = "#540c53";
             break;
         case (condition >= 600 && condition <= 699): // Group 6xx: Snow
             color = 'white';
             break;
         case (condition >= 700 && condition <= 799): // Group 7xx: Atmosphere
-            color = "#b7a190";
+            color = "#947760";
             break;
         case (condition == 800): // Group 800: Clear
             color = "#2a84cd";
             break;
         case (condition >= 801 && condition <= 899): // Group 80x: Clouds
-            color = "#c0c0c0";
+            color = "#6c6c6c";
             break;
         default:
             color = 'white';
