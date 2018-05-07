@@ -1,65 +1,47 @@
+@media only screen and (max-height: 600px) {
+    .container {
+        position:relative;
+    }
+}
+
 .container1 {
     position: relative;
     text-align: center;
     font-family: Arial;
     height: auto;
     margin-bottom: auto;
-    display: block;
 }
 
-.container {
+.dayContainer {
     width: 100%;
     overflow: hidden;
-    position:fixed;
-    bottom:0px;
-    border-top: 2px solid black;
-    border-radius: 2px;
-    display: block;
+    position:relative;
+    border-left: 1px solid black;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0%;
+    padding: 0%;
     min-width: 100%;
     position: absolute;
 }
 
-.contain{
-    /*    width: calc(100%/5);*/
+.contain {
     width: 19%;
     float: left;
+    display: inline-block;
     text-align: center;
-    border-right: 2px solid black;
-}
-
-.contain:last-child{
-    border: none;
+    border: 1px solid black;
 }
 
 .temp {
-    margin-bottom: 20px;
+    margin-bottom: auto;
 }
 
 .days {
     margin-top: 20px;
 }
 
-#selectCityBut {
-    height: 1.5em;
-    text-align: center;
-    font-size: 12px;
-    border-color: cadetblue;
-    border-radius: 2px;
-}
-
-#temp{
+#temp {
     font-size: 64px;
-}
-
-#selectedCity {
-    margin-bottom: 10px;
-}
-
-#iconDay {
-    border: 20px;
 }
