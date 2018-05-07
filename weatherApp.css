@@ -1,0 +1,63 @@
+.container1 {
+    position: relative;
+    text-align: center;
+    font-family: Arial;
+    height: auto;
+    margin-bottom: auto;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    position:fixed;
+    bottom:0px;
+    border-top: 2px solid black;
+    border-radius: 2px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    position: absolute;
+}
+
+.contain{
+    /*    width: calc(100%/5);*/
+    width: 19%;
+    float: left;
+    text-align: center;
+    border-right: 2px solid black;
+}
+
+.contain:last-child{
+    border: none;
+}
+
+.temp {
+    margin-bottom: 20px;
+}
+
+.days {
+    margin-top: 20px;
+}
+
+#selectCityBut {
+    height: 1.5em;
+    text-align: center;
+    font-size: 12px;
+    border-color: cadetblue;
+    border-radius: 2px;
+}
+
+#temp{
+    font-size: 64px;
+}
+
+#selectedCity {
+    margin-bottom: 10px;
+}
+
+#iconDay {
+    border-top: 20px;
+}
