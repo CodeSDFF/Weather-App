@@ -16,7 +16,7 @@ $('#selectedCityBut').keydown(function (event) {
 });
 
 function fivedayForecast(city){
-    $.getJSON("http://api.openweathermap.org/data/2.5/forecast?q="+city+"&mode=json&units=imperial&APPID=918cfc46242bc81cb15e16cd0fb9a5f0", function(json){
+    $.getJSON("https://api.openweathermap.org/data/2.5/forecast?q="+city+"&mode=json&units=imperial&APPID=918cfc46242bc81cb15e16cd0fb9a5f0", function(json){
         var forecast = [];
 
         for (var i = 0; i < json['list'].length; i++) {
@@ -30,7 +30,7 @@ function fivedayForecast(city){
             var day = new Date(weather["dt_txt"]).toDateString().split(" ");
             var temp = weather["main"]["temp"];
             var iconCode = weather["weather"][0]["icon"];
-            var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+            var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
 
             $('#day' + forecastDay).text(day[0]);
             $('#temp' + forecastDay).text(temp); 
@@ -43,9 +43,9 @@ function fivedayForecast(city){
 }
 
 function currentWeather(city) {
-    $.getJSON("http://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=json&units=imperial&APPID=918cfc46242bc81cb15e16cd0fb9a5f0", function(json) {
+    $.getJSON("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&mode=json&units=imperial&APPID=918cfc46242bc81cb15e16cd0fb9a5f0", function(json) {
         var iconCode = json['weather'][0]["icon"]
-        var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
+        var iconUrl = "https://openweathermap.org/img/w/" + iconCode + ".png";
         
         $('#cityName').text(json['name']);
         $('#ambientWeather').text(json['weather'][0]['description']);
